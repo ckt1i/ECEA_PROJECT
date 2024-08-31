@@ -1,0 +1,365 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: mark,  , LIC=GMZI6-DKNFN-LQ90Q-NWLV9-AWNZ5-S12TP
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.15
+Assembler:       Armasm.exe V6.15
+Linker/Locator:  ArmLink.exe V6.15
+Library Manager: ArmAr.exe V6.15
+Hex Converter:   FromElf.exe V6.15
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.9.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+D:\ECEA_PROJECT\Work6\Project\Work6.uvprojx
+Project File Date:  08/29/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.15', folder: 'D:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(445): error: non-ASM statement in naked function is not supported
+  uint32_t result=0;
+  ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(442): note: attribute is here
+uint32_t __get_PSP(void) __attribute__( ( naked ) );
+                                          ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(465): error: parameter references not allowed in naked functions
+                  "BX  lr     \n\t" : : "r" (topOfProcStack) );
+                                             ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(461): note: attribute is here
+void __set_PSP(uint32_t topOfProcStack) __attribute__( ( naked ) );
+                                                         ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(479): error: non-ASM statement in naked function is not supported
+  uint32_t result=0;
+  ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(476): note: attribute is here
+uint32_t __get_MSP(void) __attribute__( ( naked ) );
+                                          ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(499): error: parameter references not allowed in naked functions
+                  "BX  lr     \n\t" : : "r" (topOfMainStack) );
+                                             ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(495): note: attribute is here
+void __set_MSP(uint32_t topOfMainStack) __attribute__( ( naked ) );
+                                                         ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(509): warning: no previous prototype for function '__get_BASEPRI' [-Wmissing-prototypes]
+uint32_t __get_BASEPRI(void)
+         ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(509): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __get_BASEPRI(void)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(524): warning: no previous prototype for function '__set_BASEPRI' [-Wmissing-prototypes]
+void __set_BASEPRI(uint32_t value)
+     ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(524): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void __set_BASEPRI(uint32_t value)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(536): warning: no previous prototype for function '__get_PRIMASK' [-Wmissing-prototypes]
+uint32_t __get_PRIMASK(void)
+         ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(536): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __get_PRIMASK(void)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(551): warning: no previous prototype for function '__set_PRIMASK' [-Wmissing-prototypes]
+void __set_PRIMASK(uint32_t priMask)
+     ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(551): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void __set_PRIMASK(uint32_t priMask)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(563): warning: no previous prototype for function '__get_FAULTMASK' [-Wmissing-prototypes]
+uint32_t __get_FAULTMASK(void)
+         ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(563): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __get_FAULTMASK(void)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(578): warning: no previous prototype for function '__set_FAULTMASK' [-Wmissing-prototypes]
+void __set_FAULTMASK(uint32_t faultMask)
+     ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(578): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void __set_FAULTMASK(uint32_t faultMask)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(590): warning: no previous prototype for function '__get_CONTROL' [-Wmissing-prototypes]
+uint32_t __get_CONTROL(void)
+         ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(590): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __get_CONTROL(void)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(605): warning: no previous prototype for function '__set_CONTROL' [-Wmissing-prototypes]
+void __set_CONTROL(uint32_t control)
+     ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(605): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void __set_CONTROL(uint32_t control)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(619): warning: no previous prototype for function '__REV' [-Wmissing-prototypes]
+uint32_t __REV(uint32_t value)
+         ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(619): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __REV(uint32_t value)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(635): warning: no previous prototype for function '__REV16' [-Wmissing-prototypes]
+uint32_t __REV16(uint16_t value)
+         ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(635): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __REV16(uint16_t value)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(656): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(651): warning: no previous prototype for function '__REVSH' [-Wmissing-prototypes]
+int32_t __REVSH(int16_t value)
+        ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(651): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int32_t __REVSH(int16_t value)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(667): warning: no previous prototype for function '__RBIT' [-Wmissing-prototypes]
+uint32_t __RBIT(uint32_t value)
+         ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(667): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __RBIT(uint32_t value)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(683): warning: no previous prototype for function '__LDREXB' [-Wmissing-prototypes]
+uint8_t __LDREXB(uint8_t *addr)
+        ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(683): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint8_t __LDREXB(uint8_t *addr)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(699): warning: no previous prototype for function '__LDREXH' [-Wmissing-prototypes]
+uint16_t __LDREXH(uint16_t *addr)
+         ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(699): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint16_t __LDREXH(uint16_t *addr)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(715): warning: no previous prototype for function '__LDREXW' [-Wmissing-prototypes]
+uint32_t __LDREXW(uint32_t *addr)
+         ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(715): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __LDREXW(uint32_t *addr)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(732): warning: no previous prototype for function '__STREXB' [-Wmissing-prototypes]
+uint32_t __STREXB(uint8_t value, uint8_t *addr)
+         ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(732): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __STREXB(uint8_t value, uint8_t *addr)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(749): warning: no previous prototype for function '__STREXH' [-Wmissing-prototypes]
+uint32_t __STREXH(uint16_t value, uint16_t *addr)
+         ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(749): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __STREXH(uint16_t value, uint16_t *addr)
+^
+static 
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(766): warning: no previous prototype for function '__STREXW' [-Wmissing-prototypes]
+uint32_t __STREXW(uint32_t value, uint32_t *addr)
+         ^
+../Libraries/CMSIS/CM3/CoreSupport/core_cm3.c(766): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint32_t __STREXW(uint32_t value, uint32_t *addr)
+^
+static 
+19 warnings and 4 errors generated.
+compiling core_cm3.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/misc.c(24): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling misc.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_dbgmcu.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_cec.c...
+../Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.c(65): warning: In file included from...
+../Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h(478): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling system_stm32f10x.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_dac.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_crc.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_adc.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_bkp.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_can.c...
+assembling startup_stm32f10x_hd.s...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_dma.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_exti.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_flash.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_fsmc.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_gpio.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_i2c.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_iwdg.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_pwr.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_rcc.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_rtc.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_sdio.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_spi.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_tim.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_usart.c...
+../Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c(23): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_wwdg.c...
+../User/bsp_led_breath.c(1): error: 'bsp_led_colors.h' file not found
+# include "bsp_led_colors.h"
+          ^~~~~~~~~~~~~~~~~~
+1 error generated.
+compiling bsp_led_breath.c...
+../User/main.c(1): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling main.c...
+../User/stm32f10x_it.c(27): warning: In file included from...
+../User/stm32f10x_it.h(31): warning: In file included from...
+D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.0.0/Device/Include\stm32f10x.h(483): error: 'core_cm3.h' file not found
+#include "core_cm3.h"
+         ^~~~~~~~~~~~
+1 error generated.
+compiling stm32f10x_it.c...
+".\Objects\Work6.axf" - 31 Error(s), 19 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.0.0.pack
+                Keil.STM32F1xx_DFP.2.0.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.0.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
