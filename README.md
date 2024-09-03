@@ -22,3 +22,5 @@ ECE A Project
 │   └── Experimental_videos
 ├── ....
 └── Work6
+
+The specific configuration of the project is in the course PPT, here is the homework code repository, so if you need, please contact to your teacher.
