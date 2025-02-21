@@ -77,21 +77,31 @@ int main(void)
 	// make the initialization
 	initialize();
 	
+	// define the LED's status
+	uint8_t LED_Status = 0;
+	
 	// The main loop of the program: 
-	//when KEY1 is pressed, the LED will be turned off, otherwise, it will be turned on
+	// when KEY1 is pressed, the LED will be turned on if it is off, and turned off vice versa
 	while(1)
 	{
-		// when KEY1 is pressed, the LED will be turned on
+		// when KEY1 is pressed
 		if(Key_Scan(KEY1_GPIO_PORT , KEY1_GPIO_PIN) == KEY_ON)
 		{	
-			// turn on the LED by resetting the corresponding GPIO pin
-			GPIO_WriteBit(LED_GPIO_PORT,LEDB_GPIO_PIN,Bit_RESET);
-		}
-		else //otherwise, the LED will be turned off
-		{
-			// turn off the LED by setting the corresponding GPIO pin
+			// switch the LED's status
+			LED_Status = !LED_Status;
+
+			if(LED_Status)
+			{
+				// turn on the LED by resetting the corresponding GPIO pin
+				GPIO_WriteBit(LED_GPIO_PORT,LEDB_GPIO_PIN,Bit_RESET);
+			}
+			else
+			{
+				// turn off the LED by setting the corresponding GPIO pin
 			GPIO_WriteBit(LED_GPIO_PORT,LEDR_GPIO_PIN|LEDG_GPIO_PIN|LEDB_GPIO_PIN,Bit_SET);
+			}
 		}
 	};
+
 }
 
