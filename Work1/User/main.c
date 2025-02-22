@@ -74,11 +74,11 @@ void initialize(void)
 
 int main(void)
 {	
-	// make the initialization
-	initialize();
-	
 	// define the LED's status
 	uint8_t LED_Status = 0;
+	
+	// make the initialization
+	initialize();
 	
 	// The main loop of the program: 
 	// when KEY1 is pressed, the LED will be turned on if it is off, and turned off vice versa
